@@ -1,70 +1,299 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>одноколоночный макет на блоге BlogGood.ru</title>
-<style>
-html,body{margin:0;padding:0}
-body{font: 76% arial,sans-serif;text-align:center}
-p{margin:0 10px 10px}
-a{display:block;color: #981793;padding:10px}
-div#header h1{height:80px;line-height:80px;margin:0;
-  padding-left:10px;background: #EEE;color: #79B30B}
-div#container{text-align:left}
-div#content p{line-height:1.4}
-div#navigation{background:#B9CAFF}
-div#extra{background:#FF8539}
-div#footer{background: #333;color: #FFF}
-div#footer p{margin:0;padding:5px 10px}
- 
-div#container{width:700px;margin:0 auto}
-div#navigation{float:left;width:350px}
-div#extra{float:right;width:350px}
-div#footer{clear:both;width:100%}
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Box personal portfolio Template</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-<div id="container">
-<div id="header"><h1>BlogGood.ru</h1></div>
-<div id="wrapper">
-<div id="content">
-<p><strong>1) Контент.</strong>
-Как часто вы задумываетесь над смыслом жизни?
-А находите ли вы ответ на вопрос «в чем смысл жизни»?
-Что уже успели сделать за дарованные вам годы жизни?
-Вот еще один год подходит к концу… Довольны ли вы тем, как вы его прожили?
-Я очень часто огорчаюсь от того, что за свои годы ничего существенного не достигла.
- Нет в моей жизни такого поступка, которым действительно можно было бы гордиться.
- И когда я познакомилась с историей этой маленькой девочки,
- я до глубины души была впечатлена!
- Рейчел Беквит – американская девочка из Сиетла, которая родилась в 2002 году.
- Однажды в церкви, которую посещала ее семья, она узнала, что в
- Африке каждый день погибает 4,5 тысяч деток от страшных болезней,
- потому что им приходиться утолять свою жажду водой из грязных луж и зараженных болот.
-Эта статистика толкнула Рейчел на удивительный поступок.
-Перед празднованием своего 9-летия она попросила своих родных и близких,
-чтобы они не тратили деньги ей на игрушки, сладости или другие какие-либо подарки.
-Вместо этого она призвала их всех пожертвовать эти деньги благотворительной
-организации Charity Water, которая помогала людям в тех странах,
-где не хватало питьевой воды.
-</p>
-</div>
-</div>
-<div id="navigation">
-<p><strong>2) Новости.</strong>
-Как управлять человечеством?
-Конечно же, установить законы. А какими бывают законы?
-Строгими, справедливыми, вечными, а еще … нелепыми!
-Прочитайте эту интересную статью и узнайте, в каких странах
-действуют эти нелепые законы. Я также постаралась найти
-причину возникновения каждого нелепого закона.
-</p>
-</div>
-<div id="extra">
-<p><strong>3) Меню.</strong> Продолжаем узнавать интересные и невероятные факты.
-Тем, кто считает, что человеку свойственны пять чувств, спешу сказать, что их уже девять!
-Если вы интересуетесь интересными фактами о человеческом организме, то эта статья как раз для вас!
-Узнайте больше о себе и о своих органах чувств.</p>
-</div>
-<div id="footer"><p>BlogGood.ru</p></div>
-</div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+        <!-- box header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
+            </div>
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box header -->
+
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+                <li class="box-label">About me</li>
+
+                <li><a href="index.html">Intro</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="contact.html">contact me</a></li>
+
+
+
+                <li class="box-label">Follow me</li>
+
+                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+
+        <!-- box-intro -->
+        <section class="box-intro">
+            <div class="table-cell">
+                <h1 class="box-headline letters rotate-2">
+                    <span class="box-words-wrapper">
+                        <b class="is-visible">design.</b>
+                        <b>&nbsp;coding.</b>
+                        <b>graphic.</b>
+                    </span>
+		        </h1>
+                <h5>everything you need to build your personal portfolio</h5>
+            </div>
+
+            <div class="mouse">
+                <div class="scroll"></div>
+            </div>
+        </section>
+        <!-- end box-intro -->
+    </div>
+
+    <!-- portfolio div -->
+    <div class="portfolio-div">
+        <div class="portfolio">
+            <div class="no-padding portfolio_container">
+                <!-- single work -->
+                <div class="col-md-3 col-sm-6  fashion logo">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mockups in seconds</span>
+                                    <em>Fashion / Logo</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-3 col-sm-6 ads graphics">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Floating mockups</span>
+                                    <em>Ads / Graphics</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-6 col-sm-12 photography">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Photorealistic smartwatch</span>
+                                    <em>Photography</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-3 col-sm-6 fashion ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Held by hands</span>
+                                    <em>Fashion / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-6 col-sm-12 photography">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Photorealistic smartwatch</span>
+                                    <em>Photography</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+            </div>
+            <!-- end portfolio_container -->
+        </div>
+        <!-- portfolio -->
+    </div>
+    <!-- end portfolio div -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">© Box Portfolio 2016</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
+
 </body>
+
 </html>
